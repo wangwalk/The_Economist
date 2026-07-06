@@ -9,7 +9,7 @@
 
 **A comprehensive archive of The Economist magazine with multiple formats and audio resources**
 
-[📖 Blog Analysis](https://blog.evanzhou.org/) • [🎧 Audio Archive](https://drive.google.com/drive/folders/18iGahe-vasxwsKm0yfa-oP6kCtPkGssb?usp=sharing) • [🌏 中文版](./README_CN.md)
+[📥 EPUB Downloads](./EPUB_INDEX.md) • [📖 Blog Analysis](https://blog.evanzhou.org/) • [🎧 Audio Archive](https://drive.google.com/drive/folders/18iGahe-vasxwsKm0yfa-oP6kCtPkGssb?usp=sharing) • [🌏 中文版](./README_CN.md)
 
 </div>
 

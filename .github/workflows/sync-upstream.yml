@@ -44,5 +44,14 @@ jobs:
 
           git merge --no-edit upstream/main
 
+      - name: Update EPUB index
+        run: node scripts/generate-epub-index.mjs
+
       - name: Push fork
-        run: git push origin HEAD:main
+        run: |
+          if ! git diff --quiet; then
+            git add EPUB_INDEX.md
+            git commit -m "Update EPUB download index"
+          fi
+
+          git push origin HEAD:main
