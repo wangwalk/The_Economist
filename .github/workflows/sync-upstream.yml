@@ -1,0 +1,48 @@
+name: Sync upstream
+
+on:
+  schedule:
+    # Upstream normally updates on Sunday morning UTC+8.
+    - cron: "0 2 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Merge upstream/main into fork
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/evanbio/The_Economist.git
+          git fetch upstream main --tags
+
+      - name: Merge upstream
+        run: |
+          if git merge-base --is-ancestor upstream/main HEAD; then
+            echo "Fork already contains upstream/main."
+            exit 0
+          fi
+
+          git merge --no-edit upstream/main
+
+      - name: Push fork
+        run: git push origin HEAD:main
