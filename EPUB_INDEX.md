@@ -1,11 +1,12 @@
 # EPUB Download Index
 
-This page lists 78 EPUB files in this fork. Open a link on iPhone, download it in Safari, then share the file to WeChat Reading.
+This page lists 79 EPUB files in this fork. Open a link on iPhone, download it in Safari, then share the file to WeChat Reading.
 
 > Links point to GitHub raw downloads. They are public while this repository is public.
 
 ## 2026
 
+- [TE-2026-07-11.epub](https://github.com/wangwalk/The_Economist/raw/main/TE-2026-07-11/TE-2026-07-11.epub)
 - [TE-2026-07-04.epub](https://github.com/wangwalk/The_Economist/raw/main/TE-2026-07-04/TE-2026-07-04.epub)
 - [TE-2026-06-27.epub](https://github.com/wangwalk/The_Economist/raw/main/TE-2026-06-27/TE-2026-06-27.epub)
 - [TE-2026-06-20.epub](https://github.com/wangwalk/The_Economist/raw/main/TE-2026-06-20/TE-2026-06-20.epub)
